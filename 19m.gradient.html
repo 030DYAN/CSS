@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+        <style>
+            .box{
+                width: 500px;
+                height: 100px;
+                margin: 20px;
+            }
+            .grad1{
+                background:linear-gradient(red, orange, yellow, green, blue);
+            }
+            .grad2{
+                background: linear-gradient(to right, rgb(182, 74, 74), orange, yellow, green, blue);
+            }
+            .grad3{
+                background: linear-gradient(to right, red
+                , orange 70%, yellow, green, blue, purple 90%);
+            }
+            .grad4{
+                background: linear-gradient(to right, rgba(0,225,0,1),rgba(225,0,0,.5))
+            }
+            .grad5{
+                background: linear-gradient(217deg, rgba(211, 18, 18, 0.8), rgba(255,0,0,0) 70.71%), 
+	linear-gradient(127deg, rgba(220,225,0,.8), rgba(0,255,0,0) 70.71%), 
+	linear-gradient(336deg, rgba(0,0,255,.8), rgba(186, 30, 248, 0) 70.71%);
+            }
+            .grad6{
+                background: linear-gradient(to right, red 50% yellow 50%), linear-gradient(rgba(225, 0, 0, .5) ) 50% (rgba(250, 225, 0, .5) ) 50%)
+                background-size: 20px 20px;
+            }
+            /* 多重漸層 */
+            .grad7{
+                background: repeating-linear-gradient(red pink 25%);
+            }
+            .grad8{
+                background: radial-gradient(purple, yellow 25%, red 100%);
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            h1{
+                font-size: 100px;
+                background: linear-gradient(circle, rgba(207, 44, 93, 0.8), rgba(186, 30, 248, 0));
+                background-clip: text;
+                -webkit-background-clip: text;
+                color:transparent;
+            }
+        </style>
+    </head>
+<body>
+    <div class="box grad1"></div>  
+    <div class="box grad2"></div>  
+    <div class="box grad3"></div>  
+    <div class="box grad4"></div>
+    <div class="box grad5"></div>
+    <div class="box grad6"></div>
+    <div class="box grad7"></div>
+    <div class="box grad8"></div>
+    <a href="h1" class="grad-text"></a>
+    <div>
+        <h1>hello world</h1>
+    </div>
+</body>
+</html>

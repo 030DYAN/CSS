@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 3px 3px 4px gray;
+            overflow: hidden;
+            position: relative;
+        }
+        .banner{
+            width: 200px;
+            height: 100px;
+            background: url("images/flowers.jpg") ;
+            background-size: cover;  
+            
+        }
+        .figure {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top:50px;
+            left: calc(50% - 50px);
+            /* margin: -50px auto 0 ; */
+        }
+
+        .figure img {
+            width: 100%;
+        }
+
+        h3 {
+            width: 80%;
+            margin: 10px auto;
+            padding: 50px 0 10px 0 ;
+            border-bottom: 1px solid #ccc;
+            /* position: relative;
+            top: 150px */
+        }
+        /* .button{
+            width: 150px;
+            height: 30px;
+            border-radius: 10px; 
+            background:linear-gradient(rgba(115,0,0,0), rgba(225,0,0,1));
+            position: relative;
+            left: 25px;
+            bottom: 10px;
+            margin-top: 15px;
+        } */
+        .button{
+            background: linear-gradient(pink,red);
+            border-radius: 10px;
+            margin: 0 20px;
+            padding: 5px 0;
+        }
+        .button:hover{
+            background: indianred;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="banner"></div>
+        <div class="figure">
+            <img src="./images/ex1_pic1.jpg" alt="">
+        </div>
+        <div class="container">
+            <h3>Jean</h3>
+            <p>Hello, nice to meet you.</p>
+            <div class="button"> follow me</div>
+            <!-- <a role="button" class="button">follow me</a> -->
+        </div>
+</body>
+</html>

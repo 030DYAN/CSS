@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+    <style>
+        body{
+            /* margin: 30px; */
+        }
+
+        .background{
+            position: relative;
+            top: 10px;
+            /* left: 150px; */
+            background: url("images/0302001.jpg") center center no-repeat;
+            height: 500px;
+            width: 100%;
+        }
+        .container{
+            position: relative;
+        }
+        h1{
+            margin: 0;
+            position: absolute;
+            /* absolute若相對方向都有設定，以左上為主 */
+            background-color: #fff;
+            bottom: 0;
+            text-align:center;
+            width: 100%;
+            opacity: .3;
+            transition: .5s;
+        }
+        .container:hover.background{
+            opacity: .5;
+        }
+        .container:hover h1{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <h1>paris</h1>
+        </div>    
+    </div>
+</body>
+</html>
